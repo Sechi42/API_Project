@@ -6,7 +6,7 @@ st.header('Lanzar una moneda')
 
 chart = st.line_chart([0.5])
 
-def toss_coin(n): # función que emula el lanzamiento de una moneda
+def toss_coin(n):
 
     trial_outcomes = scipy.stats.bernoulli.rvs(p=0.5, size=n)
 
